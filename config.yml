@@ -1,0 +1,18 @@
+title: aternosQE
+description: >-
+  sai dau la muie la doamna de romana simona balan muie sa o ling in pizda ca
+  are un cur si o pizda de neuitat sa nu mai zic de sani!!
+template:
+  repo: aternosqe-template
+  name: aternosqe
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
